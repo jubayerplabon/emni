@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/5f652f18e6.js" crossorigin="anonymous"></script> 
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        } 
+        </script>
+</head>
+<body>
+<!-- You can open the modal using ID.showModal() method -->
+<div class="flex justify-center items-center mt-40">
+    <button class="btn" onclick="my_modal_3.showModal()">See the Message</button>
+<dialog id="my_modal_3" class="modal">
+  <div class="modal-box">
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    </form>
+    <h3 class="text-lg font-bold text-rose-400">I LOVE YOU </h3>
+    <p class="py-4 text-pink-300">PLEASE MARRY ME AND BE MY LIFE</p>
+  </div>
+</dialog>
+</div>
+</body>
+</html>
